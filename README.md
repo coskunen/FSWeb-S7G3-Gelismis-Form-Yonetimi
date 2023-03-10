@@ -1,62 +1,70 @@
-# Sprint Gün Projesi: Gelişmiş Form Yönetimi - Kullanıcı Katılımı
+# Getting Started with Create React App
 
-## Proje Açıklaması
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Şimdiye kadar basitten karmaşığa birçok farklı form yönetimi stili gördük. Bugün içinizdeki form sihirbazını serbest bırakacağız! 🧙
+## Available Scripts
 
-## Talimatlar
+In the project directory, you can run:
 
-### Görev 1: Projeyi Kurun
+### `npm start`
 
-- [ ] Forklayın, klonlayın, klasöre girin.
-- [ ] `npx create-react-app kullanici-katilimi` komutuyla boş bir çalışma başlatın.
-- [ ] Oluşturulan `kullanici-katilimi` klasörüne girin.
-- [ ] `npm` yi kullanarak, aşağıdaki bağımlılıkları React appinize ekleyin:
-  - `yup`
-  - `axios`
-- [ ] `Form.js` adında bir bileşen oluşturun, `App.js` dosyanıza import edin, ve bileşen için JSX lerinizi buraya yazın.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Görev 2: MVP
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-#### gelişmiş Formunuzu yaratın
+### `npm test`
 
-Yeni bir kullanıcıyı sistemimize dahil etmek için bir form oluşturmak istiyoruz. Yeni kullanıcımız hakkında en azından aşağıdaki bilgilere ihtiyacımız var:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- [ ] İsim (ismi, soyismi)
-- [ ] Email
-- [ ] Şifre
-- [ ] Kullanım Şartları (Terms of Service) (checkbox)
-- [ ] Gönder butonu (formu göndermek için).
+### `npm run build`
 
-#### Form Validation(doğrulama) ve Hata Mesajları Uygulayın
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Form doğrulama, kullanıcıya bir uygulamanın ince elenmiş sık dokunmuş hissini veren yönlerinden biridir. Bunu göz önünde bulundurarak, aşağıdakileri uygulayın:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- [ ] Yup'u kullanarak, _en az_ 2 adet doğrulama ve hata doğrulamada varsa ekranda gösterilecek hata mesajı ekleyin.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### POST Request Oluşturun
+### `npm run eject`
 
-Verileri "POST" edebilmek, beceri düzeyiniz ne olursa olsun, herhangi bir geliştiricinin temel becerisi olmalıdır.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- [ ] Form verilerinizi "axios"u kullanarak aşağıdaki uç noktaya gönderen  bir "POST" isteği oluşturun: _`https://reqres.in/api/users`_
-- [ ] Doğru cevabı aldığınızı görebilmek için `console.log()` kullanın
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-(Not: Merak edenler için, bu ödevin API'si için [reqres.in](https://reqres.in/) kullanıyoruz. Regres gönderdiğimiz herhangi bir veri için bir "POST" isteğini simüle etmemize izin veren ücretsiz bir API'dir. Oldukça harika!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-#### Döndürülen Verileri Ekranda Görüntüle
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Verileri çektiğinizde bunları kullanmak isteyeceksiniz değil mi? O zaman uygulamanızda kullanıcıların bir listesini görüntüleyin.
+## Learn More
 
-- [ ] `kullanıcılar` adında bir özellik ekleyin, boş bir dizi olarak yüklensin
-- [ ] Yeni kullanıcı eklemek ve `kullanıcılar` stateini güncellemek için her seferinde bir `POST` request atın 
-- [ ] Uygulamanızda `kullanıcılar` ı render edin. POST request cevabını düzgün görüntülemek için <pre> html etiketini ve JSON.stringify() yöntemini kullanabilirsiniz.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Görev 3: Esnek Görevler
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Aşağıda, projeniz için MVP yi sağladıktan sonra denemeniz gereken zorlu hedefler verilmiştir:
+### Code Splitting
 
-- [ ] Uygulamanıza basit stiller ekleyin. İstediğiniz stilleme yöntemleriyle projenize güzel bir görüntü katın.
-- [ ] Formunuza bir dropdown menü ekleyin. Stateinize bir `rol` değeri atayın ve kullanıcılara değişik roller atamak için dropdown ekleyin.
-- [ ] Formunuza istediğiniz 3 yeni input (doğrulama ve hata mesajlarıyla birlikte) ekleyin
-- [ ] Eğer bir kullanıcı `waffle@syrup.com` mail adresini girerse, mevcut doğrulayıcınıza, bu email adresinin daha önce eklendiği uyarısını verecek bir handling ekleyin.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
